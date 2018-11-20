@@ -21,4 +21,9 @@
 
 	.menu td {
 		width: 33%;
+		background-color: inherit;
+	}
+
+	.menu td:hover {
+		background-color:#555;
 	}

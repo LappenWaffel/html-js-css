@@ -4,9 +4,10 @@
 	min-height:50px;
 	background-color:#333;
 	position:fixed;
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
 	text-align:center;
 	color:#eee;
 	font-family:'Segoe UI Historic';
 }
-

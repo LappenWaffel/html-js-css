@@ -18,8 +18,19 @@ function Lul() {
 	alert("...");
 }
 
+function Lal () {
+	alert("This is what we wanted froma young age!");
+}
+
+count = 0;
+
 function change () {
-	document.getElementsByTagName("p")[0].innerText = lines[0].line1
+	count += 1;
+	if (count % 2 == 0){
+		document.getElementsByTagName("p")[0].innerText = "what's up ?";
+		return
+	}
+	document.getElementsByTagName("p")[0].innerText = lines[0].line1;
 }
 
 lines = [

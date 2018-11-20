@@ -1,0 +1,17 @@
+.popup {
+	width:100px;
+	height:100px;
+	min-height:100px;
+	min-width:100px;
+	position:fixed;
+	margin: 0 auto;
+}
+
+	.popup._img {
+		height:80%;
+		background-image: url();
+	}
+
+	.popup._text {
+		height:20%;
+	}

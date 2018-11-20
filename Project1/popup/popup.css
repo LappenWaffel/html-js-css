@@ -20,6 +20,8 @@
 		min-width: 100%;
 		background-image: url("../popup/unknown.jpg");
 		background-size:contain;
+		background-repeat:no-repeat;
+		background-position: center center;
 	}
 
 	.popup ._text {
@@ -28,12 +30,11 @@
 		min-height: 20%;
 		width: 100%;
 		min-width: 100%;
+		color:#ddd;
 	}
 
 		.popup ._text span{
 			vertical-align:middle;
-			line-height:50%;
-			display:inline-block;
 		}
 
 	.popup ._exit {

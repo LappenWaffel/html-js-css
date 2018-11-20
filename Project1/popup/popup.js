@@ -24,6 +24,7 @@ class Popup {
 
 		var span = document.createElement("span");
 		span.textContent = information.text;
+		span.style.lineHeight = `${height * 0.2}px`;
 
 		this.exitBtn = document.createElement("div");
 		this.exitBtn.className = "_exit";

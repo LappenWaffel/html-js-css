@@ -3,9 +3,10 @@ function hello () {
 }
 
 function OnLoad() {
+	var Cookies = new Popup(300, 400, 300, 100, { text: "this side uses cookies!", img: "cookies.jpg", onclick: null})
 	CreateMenu({
 		0: {
-			0: "Jacob", 1: Lul
+			0: "Jacob", 1: change
 		},
 		1: {
 			0: "Julius", 1: change
@@ -14,7 +15,6 @@ function OnLoad() {
 			0: "Lappen", 1: change
 		}
 	});
-	CreateCookies();
 }
 
 count = 0;
@@ -46,7 +46,7 @@ lines = [
 
 //1.
 function CreatePopup() {
-	var popup = new Popup(/*width*/120, /*height*/300, /*positionX*/150, /*positionY*/50, /*information*/{ text: "You Won! Click here!", img: "/popup/popup.jpg", onclick=OnPopupClick });
+	var popup = new Popup(/*width*/120, /*height*/300, /*positionX*/150, /*positionY*/50, /*information*/{ text: "You Won! Click here!", img: "/popup/popup.jpg", onclick:OnPopupClick });
 
 	//just for better visualisation:
 	var popup2 = new Popup(/*width*/    120,
@@ -56,7 +56,7 @@ function CreatePopup() {
 						   /*information*/ {
 							   text: "You Won! Click here!",
 							   img: "/popup/popup.jpg",
-							   onclick=OnPopupClick
+							   onclick:OnPopupClick
 						   });				 // | //
 }											 // | //
 function OnPopupClick() {					 // v //
@@ -68,7 +68,7 @@ function CreatePopup2() {
 	var popup = new Popup(/*width*/120, /*height*/300, /*positionX*/150, /*positionY*/50, /*information*/{
 		text: "You Won! Click here!",
 		img: "/popup/popup.jpg",
-		onclick=function () {
+		onclick:function () {
 			alert("Your price doesnt exist! Weve nevwe thaught that anyone is dump enough to click on this popup!");
 		}
 	});

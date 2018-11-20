@@ -7,6 +7,11 @@
 	<script type="text/javascript" src="index.js"></script>
 	<link type="text/css" rel="stylesheet" href="index.css">
 	<link type="text/css" rel="stylesheet" href="menubar.css">
+	<script>
+		function change () {
+			document.getElementsByName("p")[0].innerText = lines[0].line1;
+		}
+	</script>
 </head>
 	<body onload="hello();">
 		<table class="menu">
@@ -25,6 +30,7 @@
 		<div>
 			<h1>Hello</h1>
 			<p>what's up</P>
+			<button onclick="change();">click this button</button>
 		</div>
 	</body>
 </html>

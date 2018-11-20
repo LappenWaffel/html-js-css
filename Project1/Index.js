@@ -6,6 +6,10 @@ function Lul() {
 	alert("...");
 }
 
+function Lal () {
+	alert("This is what we wanted froma young age!");
+}
+
 function change () {
 	document.getElementsByTagName("p")[0].innerText = lines[0].line1
 }

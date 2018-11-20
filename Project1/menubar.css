@@ -10,6 +10,8 @@
 	margin: 0 auto;
 	color:#eee;
 	font-family:'Segoe UI Historic';
+	border-spacing:0;
+	border-collapse:collapse;
 }
 	.menu span {
 		display: inline-block;
@@ -17,3 +19,6 @@
 		line-height:50px;
 	}
 
+	.menu td {
+		width: 33%;
+	}

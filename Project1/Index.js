@@ -7,7 +7,7 @@ function Lul() {
 }
 
 function change () {
-	document.getElementsByTagName("button")[0].innerText = lines[0].line1
+	document.getElementsByTagName("p")[0].innerText = lines[0].line1
 }
 
 lines = [

@@ -2,6 +2,18 @@ function hello () {
 	alert("This site is using cockies, just accept it you have no choice!");
 }
 
+function OnLoad() {
+	CreateMenu(2,
+		{
+			0:{
+				0: "Jacob", 1: Lul
+			},
+			1:{
+				0: "Julius", 1:change
+			}
+		});
+}
+
 function Lul() {
 	alert("...");
 }

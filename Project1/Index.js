@@ -3,13 +3,15 @@ function hello () {
 }
 
 function OnLoad() {
-	CreateMenu(2,
-		{
+	CreateMenu({
 			0:{
 				0: "Jacob", 1: Lul
 			},
 			1:{
 				0: "Julius", 1:change
+			},
+			2: {
+				0: "Lappen", 1: change
 			}
 		});
 }

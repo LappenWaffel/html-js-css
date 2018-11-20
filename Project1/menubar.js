@@ -1,6 +1,8 @@
-function CreateMenu(cells, information) {
+function CreateMenu(information) {
 	var table = document.createElement("table");
 	table.className = "menu";
+	var cells = Object.keys(information).length;
+	console.log(cells);
 	var tr = document.createElement("tr");
 	for (var i = 0; i < cells; i++) {
 		var td = document.createElement("td");

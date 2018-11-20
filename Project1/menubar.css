@@ -8,7 +8,12 @@
 	left:0;
 	overflow:hidden;
 	margin: 0 auto;
-	text-align:center;
 	color:#eee;
 	font-family:'Segoe UI Historic';
 }
+	.menu span {
+		display: inline-block;
+		vertical-align: middle;
+		line-height:50px;
+	}
+

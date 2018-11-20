@@ -14,6 +14,7 @@ function OnLoad() {
 				0: "Lappen", 1: change
 			}
 		});
+	CreateCookies();
 }
 
 function Lul() {

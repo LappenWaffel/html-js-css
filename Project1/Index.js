@@ -6,6 +6,10 @@ function Lul() {
 	alert("...");
 }
 
+function change () {
+	document.getElementsByTagName("p")[0].innerText = lines[0].line1
+}
+
 lines = [
 	{
 		line1:

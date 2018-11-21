@@ -3,18 +3,18 @@ function hello () {
 }
 
 function OnLoad() {
-	var Cookies = new Popup(300, 400, 300, 100, { text: "this side uses cookies!", img: "cookies.jpg", onclick: null})
+	var Cookies = new Popup(300, 400, 300, 100, { text: "this side uses cookies!", img: "cookies.jpg", onclick: null }, document.getElementById("Popup"))
 	CreateMenu({
 		0: {
 			0: "Jacob", 1: change
 		},
 		1: {
-			0: "Julius", 1: change
+			0: "Julius", 1: function () { window.location.href = "julius.html";}
 		},
 		2: {
 			0: "Lappen", 1: change
 		}
-	});
+	}, document.getElementById("Menu"));
 }
 
 var count = 0;
@@ -38,7 +38,8 @@ lines = {
 
 //1.
 function CreatePopup() {
-	var popup = new Popup(/*width*/120, /*height*/300, /*positionX*/150, /*positionY*/50, /*information*/{ text: "You Won! Click here!", img: "/popup/popup.jpg", onclick:OnPopupClick });
+	var parent = document.getElementById("Popup");
+	var popup = new Popup(/*width*/120, /*height*/300, /*positionX*/150, /*positionY*/50, /*information*/{ text: "You Won! Click here!", img: "/popup/popup.jpg", onclick:OnPopupClick }, parent);
 
 	//just for better visualisation:
 	var popup2 = new Popup(/*width*/    120,
@@ -46,10 +47,11 @@ function CreatePopup() {
 						   /*positionX*/150,
 						   /*positionY*/ 50,
 						   /*information*/ {
-							   text: "You Won! Click here!",
-							   img: "/popup/popup.jpg",
-							   onclick:OnPopupClick
-						   });				 // | //
+							text: "You Won! Click here!",
+							img: "/popup/popup.jpg",
+							onclick: OnPopupClick
+							},
+							parent);		 // | //
 }											 // | //
 function OnPopupClick() {					 // v //
 	alert("Your price will be send to you until next century!");
@@ -57,12 +59,13 @@ function OnPopupClick() {					 // v //
 
 //2.
 function CreatePopup2() {
+	var parent = document.getElementById("Popup");
 	var popup = new Popup(/*width*/120, /*height*/300, /*positionX*/150, /*positionY*/50, /*information*/{
 		text: "You Won! Click here!",
 		img: "/popup/popup.jpg",
 		onclick:function () {
 			alert("Your price doesnt exist! Weve nevwe thaught that anyone is dump enough to click on this popup!");
 		}
-	});
+	}, parent);
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

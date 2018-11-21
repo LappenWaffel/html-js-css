@@ -1,4 +1,4 @@
-function CreateMenu(information) {
+function CreateMenu(information, parent) {
 	var table = document.createElement("table");
 	table.className = "menu";
 	var cells = Object.keys(information).length;
@@ -14,5 +14,5 @@ function CreateMenu(information) {
 		tr.append(td);
 	}
 	table.append(tr);
-	document.getElementById("Menu").append(table);
+	parent.append(table);
 }

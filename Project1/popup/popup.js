@@ -1,5 +1,5 @@
 class Popup {
-	constructor(width, height, positionX, positionY, information) {
+	constructor(width, height, positionX, positionY, information, parent) {
 		this.width = width;
 		this.height = height;
 		this.information = information;
@@ -37,7 +37,7 @@ class Popup {
 		this.body.append(this.text);
 		this.body.append(this.exitBtn);
 
-		document.getElementById("Popup").append(this.body);
+		parent.append(this.body);
 	}
 
 	setPosition(PositionX, PositionY) {

@@ -17,24 +17,16 @@ function OnLoad() {
 	});
 }
 
-count = 0;
-
-function change () {
-	count += 1;
-	if (count % 2 == 0){
-		document.getElementsByTagName("p")[0].innerText = "what's up ?";
-		return
-	}
-	document.getElementsByTagName("p")[0].innerText = lines[0].line1;
+var count = 0;
+function change() {
+	count++;
+	document.getElementsByTagName("p")[0].textContent = lines[count % Object.keys(lines).length];
 }
 
-lines = [
-	{
-		line1:
-		"hello user, you might have thought this button wouldn't work, but we are really happy to be able to say, that this button is indeed "+
-		"workin. "
-	}
-]
+lines = {
+	0: "what's up ?",
+	1: "hello user, you might have thought this button wouldn't work, but we are really happy to be able to say, that this button is indeed workin"
+}
 
 
 //Examples for Popups
